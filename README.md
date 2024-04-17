@@ -4,7 +4,7 @@
 This project is developed as part of a Kaggle competition and is designed to predict house prices based on various features like size, condition, number of bedrooms, etc. The model takes in data from two CSV files (`test.csv` and `train.csv`), learns how each feature influences the house prices from the `train.csv` file, and then predicts the prices for the houses in the `test.csv` file. The results are outputted to a file called `prediction file.csv`.
 
 ## File Descriptions
-- **main.py**: The main script that orchestrates the data loading, preprocessing, modeling, and prediction processes. It utilizes functions from the other modules to execute the model pipeline.
+- **app.py**: The main script that orchestrates the data loading, preprocessing, modeling, and prediction processes. It utilizes functions from the other modules to execute the model pipeline.
 - **load_data.py**: Contains the `load_data` function which loads the CSV files into pandas DataFrames, handling any specific nuances of the CSV format and missing data.
 - **feature_engineer.py**: Implements the `feature_engineer` function to transform raw dataset features into formats better suited for modeling (e.g., converting categories to numerical values, etc.).
 - **missing_data.py**: Provides functions to handle missing values in the dataset. It differentiates between missing data that are 'NA' by design and those that are genuinely missing.
